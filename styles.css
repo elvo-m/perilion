@@ -1,0 +1,275 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #0e0d0d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Ensure the header stays above other content */
+}
+
+header nav ul li a.active {
+  color: #ff5722; /* Highlight color for active link */
+  font-weight: bold;
+}
+
+.cta-button {
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.cta-button:hover {
+  background: #e64a19;
+}
+
+/* Hero Section Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  justify-content: center; /* Center the buttons */
+  margin-top: 30px; /* Space above the buttons */
+}
+
+.hero-buttons .cta-button {
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 30px; /* Larger padding for emphasis */
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline from links */
+  transition: background 0.3s ease;
+}
+
+.hero-buttons .cta-button:hover {
+  background: #e64a19;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('peakpx.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Services Section */
+#services {
+  padding: 50px 20px;
+  text-align: center;
+  background: #050505;
+}
+
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 1x4 matrix */
+  gap: 40px; /* Space between service items */
+  overflow: hidden; /* Hide overflow for navigation */
+  width: 100%;
+  max-width: 1300px; /* Limit the width for better readability */
+}
+
+.service-item {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth transition for navigation */
+}
+
+.service-icon {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+/* About Us Section */
+#about {
+  padding: 50px 20px;
+  background: #000000;
+  color: #fff;
+}
+
+.about-content {
+  display: flex;
+  align-items: normal; /* Align items to the top */
+  gap: 40px; /* Space between text and mission/vision */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.why-choose-us h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-us ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.why-choose-us ul li strong {
+  color: #ff5722; /* Highlight key phrases */
+}
+
+.mission-vision {
+  flex: 1;
+  background: #030303; /* Dark background for mission/vision */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mission-vision h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ff5722; /* Highlight headings */
+}
+
+.mission-vision p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-vision {
+    margin-top: 20px;
+  }
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
