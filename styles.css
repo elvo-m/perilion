@@ -4,8 +4,8 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #fff;
-  background-color: #0e0d0d;
+  color: #fffcfc;
+  background-color: hsl(0, 0%, 100%);
 }
 
 header {
@@ -13,8 +13,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: #000;
-  color: #fff;
+  background: #f8f8f8;
+  color: #070707;
 }
 
 header .logo {
@@ -46,13 +46,18 @@ header {
   z-index: 1000; /* Ensure the header stays above other content */
 }
 
+.logo img {
+  height: 70px; /* Adjust the height as needed */
+  width: 180px; /* Maintain aspect ratio */
+}
+
 header nav ul li a.active {
-  color: #ff5722; /* Highlight color for active link */
+  color: hsl(224, 100%, 57%); /* Highlight color for active link */
   font-weight: bold;
 }
 
 .cta-button {
-  background: #ff5722;
+  background: hsl(241, 63%, 33%);
   color: #fff;
   border: none;
   padding: 10px 30px;
@@ -62,7 +67,7 @@ header nav ul li a.active {
 }
 
 .cta-button:hover {
-  background: #e64a19;
+  background: hsl(241, 63%, 33%);
 }
 
 /* Hero Section Buttons */
@@ -74,7 +79,7 @@ header nav ul li a.active {
 }
 
 .hero-buttons .cta-button {
-  background: #ff5722;
+  background: hsl(241, 63%, 33%);
   color: #fff;
   border: none;
   padding: 10px 30px; /* Larger padding for emphasis */
@@ -91,7 +96,7 @@ header nav ul li a.active {
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('peakpx.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('WallpaperDog-20539343.jpg') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -111,44 +116,43 @@ header nav ul li a.active {
 #services {
   padding: 50px 20px;
   text-align: center;
-  background: #050505;
-}
-
-.services-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: hsl(241, 63%, 33%);
+  background: #faf8f8;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 1x4 matrix */
-  gap: 40px; /* Space between service items */
-  overflow: hidden; /* Hide overflow for navigation */
-  width: 100%;
-  max-width: 1300px; /* Limit the width for better readability */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between grid items */
+  max-width: 1200px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the grid */
 }
 
 .service-item {
-  background: #333;
+  background: hsl(0, 6%, 94%);
   padding: 20px;
   border-radius: 8px;
-  color: #fff;
+  color: #0e0d0d;
   text-align: center;
-  transition: transform 0.3s ease; /* Smooth transition for navigation */
 }
 
 .service-icon {
-  width: 100px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin-bottom: 15px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 column for smaller screens */
+  }
+}
 /* About Us Section */
 #about {
   padding: 50px 20px;
-  background: #000000;
-  color: #fff;
+  background: #f8f8f8;
+  color: #0c0c0b;
 }
 
 .about-content {
@@ -166,6 +170,7 @@ header nav ul li a.active {
 .about-text h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: hsl(241, 63%, 33%);
 }
 
 .about-text p {
@@ -177,6 +182,7 @@ header nav ul li a.active {
 .why-choose-us h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  color: hsl(241, 63%, 33%);
 }
 
 .why-choose-us ul {
@@ -185,18 +191,18 @@ header nav ul li a.active {
 }
 
 .why-choose-us ul li {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
 .why-choose-us ul li strong {
-  color: #ff5722; /* Highlight key phrases */
+  color: hsl(241, 63%, 33%); /* Highlight key phrases */
 }
 
 .mission-vision {
   flex: 1;
-  background: #030303; /* Dark background for mission/vision */
+  background: #; /* Dark background for mission/vision */
   padding: 20px;
   border-radius: 8px;
 }
@@ -204,11 +210,11 @@ header nav ul li a.active {
 .mission-vision h3 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #ff5722; /* Highlight headings */
+  color: hsl(241, 63%, 33%); /* Highlight headings */
 }
 
 .mission-vision p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -229,7 +235,8 @@ header nav ul li a.active {
 #contact {
   padding: 50px 20px;
   text-align: center;
-  background: #1a1a1a;
+  background: #f8f8f8;
+  color: hsl(241, 63%, 33%);
 }
 
 #contact-form {
@@ -272,4 +279,10 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 30px; /* Smaller logo for mobile */
+  }
 }
